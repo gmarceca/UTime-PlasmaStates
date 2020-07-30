@@ -37,3 +37,4 @@ setup(
                  'Programming Language :: Python :: 3.7'
                  'License :: SPC-EPFL License']
 print("blpxd")
+print("qljry")
