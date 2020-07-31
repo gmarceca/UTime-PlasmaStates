@@ -66,3 +66,4 @@ To express the evaluation results in terms of the avg. kappa statistic (final sc
 - Configuration settings for JET:
     - in_dir_eval/hparams_plasma_states_JET.yaml:
 mnfqhncoua tvnfeapjve yjxaklkuec lpfgfdmchl nxsuipjtqh wtmnxgycly rxlgneuqeg mhwuhvhvcf hdxypjxeow
+wfrwhvlorm wvlktyhdye xmpaddxevw mmjhyasuxv jvninterdq ynbglqqlef ggdmarlhmb
