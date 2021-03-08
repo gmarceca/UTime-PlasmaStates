@@ -38,4 +38,4 @@ setup(
                  'License :: SPC-EPFL License']
 print("blpxd")
 print("kopcu")
-print("gqmif")
+print("psbiv")
