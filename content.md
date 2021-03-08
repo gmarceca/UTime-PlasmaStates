@@ -65,4 +65,4 @@ To express the evaluation results in terms of the avg. kappa statistic (final sc
     - in_dir_eval/dataset_configurations/dataset_1_TCV.yaml
 - Configuration settings for JET:
     - in_dir_eval/hparams_plasma_states_JET.yaml:
-xdoxxvngny phuigjhpgp hxqlxcqwkw
+dqfhfpnovu nunboagurl urvpfegarb
