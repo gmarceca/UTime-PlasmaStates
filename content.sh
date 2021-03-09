@@ -68,3 +68,4 @@ elif $cpu; then
 fi
 
 echo installation complete!
+echo "arlfa"
