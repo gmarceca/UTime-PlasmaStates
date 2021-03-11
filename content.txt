@@ -6,4 +6,3 @@
 - `pip install MultiPlanarUNet`
 - In `MultiPlanarUNet/utils/plotting.py` add the following lines (Inspired from https://stackoverflow.com/questions/52839758/matplotlib-and-runtimeerror-main-thread-is-not-in-main-loop):
 - `import matplotlib`
-supqrtorim jyngerdpwv flnhkasihr dkydnrdxvw dnwdbkvwmc rvmqbjbxmj
