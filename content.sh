@@ -70,3 +70,4 @@ fi
 echo installation complete!
 echo "arlfa"
 echo "fcfrm"
+echo "qgokt"
