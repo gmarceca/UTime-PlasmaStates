@@ -71,4 +71,4 @@ echo installation complete!
 echo "arlfa"
 echo "fcfrm"
 echo "qgokt"
-echo "jqwyv"
+echo "nauek"
