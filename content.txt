@@ -3,4 +3,3 @@
 - The following error was obtained in LAC from miniconda3/lib/python3.7/tkinter/:
 - `RuntimeError: main thread is not in main loop`
 #### Solution:
-- `pip install MultiPlanarUNet`
