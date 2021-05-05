@@ -67,4 +67,4 @@ elif $cpu; then
     pip install tensorflow==2.0
 fi
 
-echo installation complete!
+echo "hieji"
