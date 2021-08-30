@@ -1,0 +1,29 @@
+train_data:
+  data_dir:
+  period_length_sec: 30
+  identifier: "TRAIN"
+
+val_data:
+  data_dir:
+  period_length_sec: 30
+  identifier: "VAL"
+
+test_data:
+  data_dir:
+  period_length_sec: 30
+  identifier: "TEST"
+
+dataset_config:
+  #
+  # Hyperparameters passed to get_generator
+  #
+  Machine: 'TCV'
+  points_per_window: 1
+  seq_length: 10000
+  shuffle: True
+  pad_seq: True
+  read_csv: False
+  validate_score: False
+  states: ['L', 'D', 'H']
+  diagnostics: ['PD', 'FIR', 'DML', 'IP']
+  project_dir: "" 

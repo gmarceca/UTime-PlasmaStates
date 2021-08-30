@@ -1,0 +1,36 @@
+train_data:
+  data_dir: /home/marceca/UTime-PlasmaStates-V2-c/event-detection/algorithms/UTime-PlasmaStates/dataset/5_CV/split_full/train
+  period_length_sec: 30
+  identifier: "TRAIN"
+
+val_data:
+  data_dir: /home/marceca/NoTivoli/event_det2/data/Detected
+  period_length_sec: 30
+  identifier: "VAL"
+
+test_data:
+  data_dir: /home/marceca/UTime-PlasmaStates-V2-c/event-detection/algorithms/UTime-PlasmaStates/dataset/test
+  period_length_sec: 30
+  identifier: "TEST"
+
+dataset_config:
+  #
+  # Hyperparameters passed to get_generator
+  #
+  Machine: 'TCV'
+  signal_sampling_rate: 1.0e4
+  stride: 1
+  conv_w_size: 1
+  seq_length: 2000
+  points_per_window: 1
+  labelers: ['ApauMarceca']
+  conv_w_offset: 10
+  shuffle: True
+  pad_seq: False
+  sliding_step: 1
+  read_csv: True
+  validate_score: False
+  shot: 57000
+  states: ['L', 'D', 'H']
+  diagnostics: ['PD', 'FIR']
+  project_dir:
