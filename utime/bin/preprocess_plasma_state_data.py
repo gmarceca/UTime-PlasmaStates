@@ -111,33 +111,34 @@ def run(args):
 
     # Get Clusters Hierarchy structure and preprocess shots
     # Load a matlab .mat file as np arrays
-    from scipy.io import loadmat
-    if machine == 'TCV':
-        DWT_out = loadmat(os.path.join(data_dir, 'Clusters_DWT_26052020.mat'))
-    elif machine == 'JET':
-        DWT_out = loadmat(os.path.join(data_dir, 'Clusters_ES_JET_v1.mat'))
-    # Get shotlist and clusters obtained from DTW tool
-    shotlist = DWT_out['shotlist']
-    if machine == 'TCV':
-        clusters = DWT_out['myclusters']
-    elif machine == 'JET':
-        clusters = DWT_out['clusters']
-    
-    # Flat arrays
-    shotlist = [item[0][0].flat[0] for item in shotlist[0]]
-    clusters = [item.flat[0] for item in clusters[0]]
-    all_shots = [int(f_.split('/')[-1].split('_')[1]) for lab in labelers for f_ in glob(os.path.join(data_dir_in, lab + '/' + machine + '*'))]
-    #print('all_shots: ', all_shots)
+    if not unit_test:
+        from scipy.io import loadmat
+        if machine == 'TCV':
+            DWT_out = loadmat(os.path.join(data_dir, 'Clusters_DWT_26052020.mat'))
+        elif machine == 'JET':
+            DWT_out = loadmat(os.path.join(data_dir, 'Clusters_ES_JET_v1.mat'))
+        # Get shotlist and clusters obtained from DTW tool
+        shotlist = DWT_out['shotlist']
+        if machine == 'TCV':
+            clusters = DWT_out['myclusters']
+        elif machine == 'JET':
+            clusters = DWT_out['clusters']
+        
+        # Flat arrays
+        shotlist = [item[0][0].flat[0] for item in shotlist[0]]
+        clusters = [item.flat[0] for item in clusters[0]]
+        all_shots = [int(f_.split('/')[-1].split('_')[1]) for lab in labelers for f_ in glob(os.path.join(data_dir_in, lab + '/' + machine + '*'))]
+        #print('all_shots: ', all_shots)
 
-    # Check all shots in dir are in the Cluster structure
-    for s in all_shots:
-        if s not in shotlist:
-            print('shot {} not in cluster structure. Assigning it to a new cluster'.format(s))
-            residual_cluster = np.max(clusters) + 1
-            clusters.append(residual_cluster)
-            shotlist.append(s)
+        # Check all shots in dir are in the Cluster structure
+        for s in all_shots:
+            if s not in shotlist:
+                print('shot {} not in cluster structure. Assigning it to a new cluster'.format(s))
+                residual_cluster = np.max(clusters) + 1
+                clusters.append(residual_cluster)
+                shotlist.append(s)
 
-    if unit_test:
+    else:
         shotlist = [87870]
         clusters = [1]
 

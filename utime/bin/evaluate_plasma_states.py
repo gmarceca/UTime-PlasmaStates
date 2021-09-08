@@ -52,13 +52,6 @@ def get_argparser():
                         help="Which split of data of those stored in the "
                              "hparams file should the evaluation be performed "
                              "on.")
-    parser.add_argument("--plot_hypnograms", action="store_true",
-                        help="Add plots comparing the predicted versus true"
-                             " hypnograms to folder [out_dir]/plots/hypnograms.")
-    parser.add_argument("--plot_CMs", action="store_true",
-                        help="Add plots showing per-sample confusion matrices."
-                             " The plots will be stored in folder "
-                             "[out_dir]/plots/CMs")
     parser.add_argument("--weights_file_name", type=str, required=False,
                         help="Specify the exact name of the weights file "
                              "(located in <project_dir>/model/) to use.")
@@ -68,10 +61,6 @@ def get_argparser():
                         help="Display kappa scores predictions from a model")
     parser.add_argument("--shot", type=str, default="",
                         help="Specify shot you want to validate")
-    parser.add_argument("--wake_trim_min", type=int, required=False,
-                        help="Only evaluate on within wake_trim_min of wake "
-                             "before and after sleep, as determined by true "
-                             "labels")
     return parser
 
 
