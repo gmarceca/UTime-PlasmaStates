@@ -6,8 +6,7 @@ in: https://arxiv.org/abs/1910.11162
 The code was adapted to work in plasma states time series data
 from https://github.com/perslev/U-Time
 
-<img src="https://github.com/gmarceca/UTime-PlasmaStates/blob/main/UTime_detection.png" width="60" height="60" />
-![alt text](https://github.com/gmarceca/UTime-PlasmaStates/blob/main/UTime_detection.png)
+<img src="https://github.com/gmarceca/UTime-PlasmaStates/blob/main/UTime_detection.png" width="200" height="100" />
 
 ## Installation
 
